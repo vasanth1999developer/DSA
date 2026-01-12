@@ -1,16 +1,6 @@
 package com.myself.dsa;
 
-class Car{
 
-
-
-}
-
-class Carr{
-
-
-
-}
 
 
 
