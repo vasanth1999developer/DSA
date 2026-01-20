@@ -2,6 +2,8 @@ package com.myself.dsa;
 
 public class PalindromeNumber {
 
+	
+	
 //	Given an integer x, return true if x is a palindrome, and false otherwise.
 //
 //			 
@@ -24,8 +26,36 @@ public class PalindromeNumber {
 
 	
 	
+	 public boolean isPalindrome(int x) {
+		 int orginalNum = x ;
+		 
+		 if (x<0 || (x % 10 == 0 && x!=0)) {
+			 
+			 return false;
+		 }
+
+		 int reversed =0;
+		 
+		       while (x >0) {
+		    	   
+		    	   int lastNum = x % 10;
+		    	   
+		    	    reversed = reversed * 10 + lastNum;
+		    	    x = x / 10;
+		    	   
+
+		       }
+		 
+		 
+                return orginalNum==reversed;
+	        
+	    }
 	
 	public static void main(String[] args) {
+		
+		
+		
+		
 		
 
 	}
